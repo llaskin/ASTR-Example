@@ -1,0 +1,49 @@
+<job>
+    <batch name="IBrance Batch">
+        <test appname="IBrance Tests" testname="Sitemap Tests">
+            <configuration>
+                <applitools>applitoolsConf.xml</applitools>
+                <driver>chrome</driver> <!-- Additional options: firefox, safari, ie, edge -->
+                <viewport width="1900" height="900"></viewport>
+            </configuration>
+            <SmartSplit to="sitemap url groups" max="10" path="sitemap.xml" maxAttempts="1"/>
+            <execute>
+                <action type="crawl" from="sitemap.xml file" path="sitemap.xml" createSeparateTests="true">
+                    <foreach>
+                        <action type="navigate">exp[%url%]</action>
+                        <action type="sleep">1000</action>
+                        <action type="check" target="window">exp[%url%]</action>
+                    </foreach>
+                </action>
+            </execute>
+        </test>
+        <test appname="IBrance Tests" testname="Expansion/Contraction Tests">
+            <configuration>
+                <applitools>applitoolsConf.xml</applitools>
+                <driver>chrome</driver> <!-- Additional options: firefox, safari, ie, edge -->
+                <viewport width="1900" height="900"></viewport>
+            </configuration>
+            <execute>
+                <action type="navigate">http://www.ibrance.com</action>
+                <action type="click" by="css" selector=".view-more" />
+                <action type="sleep">1000</action>
+                <action type="check" target = "window" stitchmode="true">View More open</action>
+                <action type="click" by="css" selector=".isi-close" />
+                <action type="check" target="window">View More closed</action>
+            </execute>
+        </test>
+        <test appname="IBrance Tests" testname="Link Click Tests">
+            <configuration>
+                <applitools>applitoolsConf.xml</applitools>
+                <driver>chrome</driver> <!-- Additional options: firefox, safari, ie, edge -->
+                <viewport width="1900" height="900"></viewport>
+            </configuration>
+            <execute>
+                <action type="navigate">http://www.ibrance.com</action>
+                <action type="mouseOver" by="linkText" selector="FOR NEWLY DIAGNOSED" />
+                <action type="click" by="linkText" selector="GETTING STARTED" />
+                <action type="checkWindow">Getting Started Page</action>
+            </execute>
+        </test>
+    </batch>
+</job>
