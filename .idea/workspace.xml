@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5378ad08-0fbd-402c-8ded-666477c4d24a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/applitoolsConf.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobs/job.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applitoolsConf.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/job.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sitemap.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/applitoolsConf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/applitoolsConf.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +16,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jobs/job.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
@@ -29,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/applitoolsConf.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="58" lean-forward="true" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
+              <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -56,6 +52,7 @@
         <option value="$PROJECT_DIR$/job.xml" />
         <option value="$PROJECT_DIR$/applitoolsConf.xml" />
         <option value="$PROJECT_DIR$/jobs/job.xml" />
+        <option value="$PROJECT_DIR$/config/applitoolsConf.xml" />
       </list>
     </option>
   </component>
@@ -196,13 +193,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/applitoolsConf.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="58" lean-forward="true" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sitemaps/disney-sitemap.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -210,6 +200,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/applitoolsConf.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
         </state>
       </provider>
     </entry>
