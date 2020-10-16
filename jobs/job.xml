@@ -1,0 +1,38 @@
+<job>
+    <batch name="ASTR Sample Batch">
+        <test appname="Disney Tests" testname="Sitemap Tests">
+            <configuration>
+                <applitools>applitoolsConf.xml</applitools>
+                <driver>chrome</driver>
+                <viewport width="1000" height="800"></viewport>
+            </configuration>
+            <SmartSplit to="sitemap url groups" max="10" path="./sitemaps/disney-sitemap.xml" maxAttempts="1"/>
+            <execute>
+                <action type="crawl" from="sitemap.xml file" path="./sitemaps/disney-sitemap.xml" createSeparateTests="true">
+                    <foreach>
+                        <action type="navigate">exp[%url%]</action>
+                        <action type="sleep">1000</action>
+                        <action type="check" target="window">exp[%url%]</action>
+                    </foreach>
+                </action>
+            </execute>
+        </test>
+        <test appname="Pfizer Tests" testname="Sitemap Tests">
+            <configuration>
+                <applitools>./config/applitoolsConf.xml</applitools>
+                <driver>chrome</driver>
+                <viewport width="1000" height="800"></viewport>
+            </configuration>
+            <SmartSplit to="sitemap url groups" max="10" path="./sitemaps/pfizer-sitemap.xml" maxAttempts="1"/>
+            <execute>
+                <action type="crawl" from="sitemap.xml file" path="./sitemaps/pfizer-sitemap.xml" createSeparateTests="true">
+                    <foreach>
+                        <action type="navigate">exp[%url%]</action>
+                        <action type="sleep">1000</action>
+                        <action type="check" target="window">exp[%url%]</action>
+                    </foreach>
+                </action>
+            </execute>
+		</test>
+    </batch>
+</job>
